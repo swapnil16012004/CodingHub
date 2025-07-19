@@ -8,7 +8,7 @@ import * as CodeMirror from "codemirror";
 import { useLocation, useParams } from "react-router-dom";
 import { MyContext } from "../../App";
 import { html as beautifyHtml } from "js-beautify";
-import axios from "axios";
+import axiosInstance from "../../../axiosConfig";
 
 const JsEditor = () => {
   const editorContainerRef = useRef(null);
@@ -35,7 +35,7 @@ const JsEditor = () => {
 
     const fetchHeaders = async () => {
       try {
-        const response = await axios.get("/headers.json");
+        const response = await axiosInstance.get("/headers.json");
         const headersForSubtopic = response.data[subtopicfrompath] || "";
         console.log(headersForSubtopic);
         context.setHeadElements(headersForSubtopic);

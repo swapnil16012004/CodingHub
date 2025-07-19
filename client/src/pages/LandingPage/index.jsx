@@ -26,7 +26,7 @@ import ctaImg from "../../assets/cta.jpeg";
 import { MyContext } from "../../App";
 import { Link, useNavigate } from "react-router-dom";
 import codinghubLogo from "../../assets/codinghub.png";
-import axios from "axios";
+import axiosInstance from "../../../axiosConfig";
 
 const LandingPage = () => {
   const heroRef = useRef();
@@ -70,7 +70,7 @@ const LandingPage = () => {
 
   const handlesubmit = async () => {
     try {
-      const response = await axios.post("/api/logout");
+      const response = await axiosInstance.post("/api/logout");
       localStorage.removeItem("token");
       context.setIsLoggedIn(false);
       context.setFlashMessage(response.data.message);

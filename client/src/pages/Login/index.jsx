@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { MyContext } from "../../App";
 import { useContext, useEffect, useState } from "react";
 import codinghubLogo from "../../assets/codinghub.png";
-import axios from "axios";
+import axiosInstance from "../../../axiosConfig";
 
 const Login = () => {
   const context = useContext(MyContext);
@@ -20,7 +20,7 @@ const Login = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/login", formData);
+      const response = await axiosInstance.post("/api/login", formData);
       context.setIsLoggedIn(true);
       context.setCurrUser(response.data.user.username);
       localStorage.setItem("token", response.data.token);

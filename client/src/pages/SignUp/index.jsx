@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { MyContext } from "../../App";
 import codinghubLogo from "../../assets/codinghub.png";
-import axios from "axios";
+import axiosInstance from "../../../axiosConfig";
 
 const SignUp = () => {
   const context = useContext(MyContext);
@@ -21,7 +21,7 @@ const SignUp = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/signup", formData);
+      const response = await axiosInstance.post("/api/signup", formData);
       context.setIsLoggedIn(true);
       context.setCurrUser(response.data.user);
       context.setFlashMessage(response.data.message);
