@@ -70,7 +70,7 @@ const LandingPage = () => {
 
   const handlesubmit = async () => {
     try {
-      const response = await axiosInstance.post("/api/logout");
+      const response = await axiosInstance.post("/logout");
       localStorage.removeItem("token");
       context.setIsLoggedIn(false);
       context.setFlashMessage(response.data.message);

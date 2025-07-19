@@ -21,7 +21,7 @@ const SignUp = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axiosInstance.post("/api/signup", formData);
+      const response = await axiosInstance.post("/signup", formData);
       context.setIsLoggedIn(true);
       context.setCurrUser(response.data.user);
       context.setFlashMessage(response.data.message);

@@ -20,7 +20,7 @@ const Login = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axiosInstance.post("/api/login", formData);
+      const response = await axiosInstance.post("/login", formData);
       context.setIsLoggedIn(true);
       context.setCurrUser(response.data.user.username);
       localStorage.setItem("token", response.data.token);
