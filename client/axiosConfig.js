@@ -1,11 +1,13 @@
 import axios from "axios";
 
-const baseURL =
-  import.meta.env.VITE_API_URL && import.meta.env.VITE_API_URL !== ""
-    ? `${import.meta.env.VITE_API_URL}/api`
-    : "/api";
+const baseURL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : "/api";
 
-const axiosInstance = axios.create({ baseURL });
+const axiosInstance = axios.create({
+  baseURL,
+  withCredentials: true,
+});
 
 axiosInstance.interceptors.request.use(
   (config) => {
