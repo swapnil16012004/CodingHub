@@ -25,7 +25,7 @@ async function main() {
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://coding-hub-ten.vercel.app/",
+  "https://coding-hub-ten.vercel.app",
 ];
 
 app.use(
