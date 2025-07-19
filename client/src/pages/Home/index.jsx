@@ -3,7 +3,7 @@ import ConceptsPage from "../ConceptsPage";
 import { MyContext } from "../../App";
 import { useParams } from "react-router-dom";
 import axiosInstance from "../../../axiosConfig";
-import ConceptSidebar from "../../components/Conceptsidebar";
+import ConceptSidebar from "../../components/ConceptSidebar";
 
 const Home = () => {
   const context = useContext(MyContext);
