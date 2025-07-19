@@ -1,0 +1,325 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  height: auto;
+}
+/* codemirror */
+
+.CodeMirror {
+  height: 100%;
+  width: 100%;
+}
+
+.concept-box {
+  margin: 40px 0;
+}
+.code-preview-box {
+  background: #e7e9eb;
+  padding: 8px 20px;
+  border-radius: 6px;
+  gap: 10px;
+}
+
+.code-preview {
+  background: #fff;
+  padding: 8px 12px;
+  font-family: monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border-left: 4px solid #138496;
+  margin: 16px 0;
+}
+
+.editor-box {
+  margin-top: 20px;
+}
+
+/* navbar */
+
+.navWrapper {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+.navbar {
+  height: 60px;
+  width: 90%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #ececec;
+}
+
+.logoWrapper {
+  height: 35px;
+  width: 35px;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.searchbar {
+  height: 37.6px;
+  position: relative;
+}
+
+.searchbar .searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.searchbar .searchInput {
+  padding-left: 36px;
+  width: 150px;
+}
+
+.searchbar .searchInput:focus {
+  width: 300px;
+  transition: width 0.4s ease-in-out;
+  border: 1px solid #ced4da;
+  box-shadow: none !important;
+}
+
+.userActions {
+  width: 83px;
+  height: 38px;
+}
+
+/* home */
+
+.home {
+  margin-top: 125px !important;
+  background-color: white;
+  height: calc(100vh - 125px);
+}
+
+.conceptsidebar {
+  height: 100%;
+  width: 250px;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #eceef1;
+  flex-shrink: 0;
+}
+
+.conceptsidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.conceptsidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.conceptsidebar::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.conceptpage {
+  height: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.conceptpage::-webkit-scrollbar {
+  width: 10px;
+}
+
+.conceptpage::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.conceptpage::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.languagebar {
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 90%;
+  margin: auto;
+  background-color: #282a35;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.languagebar::-webkit-scrollbar {
+  display: none;
+}
+
+.lan {
+  height: 40px;
+  color: white;
+  width: 97px;
+}
+
+/* conceptsidebar */
+
+.conceptsidebarList {
+  list-style: none;
+}
+
+.conceptsidebarLink {
+  color: #212529 !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+  height: 26px;
+}
+
+.conceptsidebarLink:hover {
+  background-color: #ccc !important;
+}
+
+.active {
+  background-color: #138496 !important;
+  color: white !important;
+}
+
+.active:hover {
+  background-color: #138496 !important;
+  color: white !important;
+}
+
+.home-div {
+  height: 292px;
+  width: 1032px;
+  background-color: #bfe2e8;
+  border-radius: 6px;
+  margin: 20px 10px 20px 0px;
+  padding: 30px;
+  gap: 0.5rem;
+}
+
+.startLearning {
+  height: 43px;
+  min-width: 293px;
+  width: fit-content;
+  background-color: #138496;
+  padding: 8px 25px;
+}
+
+.startLearning:hover {
+  border-color: transparent;
+}
+
+.startLearning:focus {
+  outline: none;
+}
+
+.auth-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.authLogo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.auth-box {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  height: 550px;
+  gap: 3rem;
+}
+
+.loginbox {
+  height: auto;
+  gap: 2rem;
+}
+
+.auth-box h2 {
+  margin-bottom: 1.5rem;
+  color: #138496;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-box input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: white !important;
+  height: 45px;
+  color: grey !important;
+}
+
+.auth-box button {
+  padding: 0.75rem;
+  background-color: #138496;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.auth-box a:hover {
+  color: #138496 !important;
+  text-decoration: none !important;
+}
+
+.auth-box button:hover {
+  background-color: #117a7a;
+}
+
+.auth-switch {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-switch a {
+  color: #138496;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.profile {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: #ccc;
+}

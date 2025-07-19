@@ -1,0 +1,146 @@
+body.externalcss {
+  background-color: powderblue;
+}
+body.externalcss h1 {
+  color: blue;
+}
+body.externalcss p {
+  color: red;
+}
+
+body.centeralignadivelement div {
+  width: 300px;
+  margin: auto;
+}
+
+body.inlineblock div {
+  width: 30%;
+  display: inline-block;
+}
+
+body.theidattribute #myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+body.differencebetweenclassandid #myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+body.differencebetweenclassandid .city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+body.cssfloatlayout * {
+  box-sizing: border-box;
+}
+body.cssfloatlayout {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body.cssfloatlayout header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+body.cssfloatlayout nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+body.cssfloatlayout nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+body.cssfloatlayout article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+body.cssfloatlayout section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body.cssfloatlayout footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  body.cssfloatlayout nav,
+  body.cssfloatlayout article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+body.cssflexboxlayout * {
+  box-sizing: border-box;
+}
+
+body.cssflexboxlayout {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.cssflexboxlayout header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+body.cssflexboxlayout section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+body.cssflexboxlayout nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+body.cssflexboxlayout nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body.cssflexboxlayout article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+body.cssflexboxlayout footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  body.cssflexboxlayout section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,2201 @@
+[
+  {
+    "language": "html",
+    "topics": [
+      {
+        "name": "Tutorial",
+        "concepts": [
+          {
+            "name": "Home",
+            "title": "HTML HOME",
+            "description": [
+              "HTML is the standard markup language for creating Web pages.",
+              "With HTML you can create your own Website.",
+              "HTML is easy to learn - You will enjoy it!"
+            ],
+            "code": "<h1>This is a Heading</h1><p>This is a paragraph.</p>"
+          },
+          {
+            "name": "Intro",
+            "title": "HTML Introduction",
+            "description": [
+              "HTML is the standard markup language for creating Web pages."
+            ],
+            "subtopics": [
+              {
+                "title": "What is HTML?",
+                "description": [
+                  "HTML stands for Hyper Text Markup Language.",
+                  "HTML is the standard markup language for creating Web pages.",
+                  "HTML describes the structure of a Web page.",
+                  "HTML consists of a series of elements.",
+                  "HTML elements tell the browser how to display the content.",
+                  "HTML elements label pieces of content such as 'this is a heading', 'this is a paragraph', 'this is a link', etc."
+                ],
+                "code": "<h1>My First Heading</h1><p>My first paragraph.</p>"
+              },
+              {
+                "title": "What is an HTML Element?",
+                "description": [
+                  "<tagname> Content goes here... </tagname>",
+                  "The HTML element is everything from the start tag to the end tag:",
+                  "<h1>My First Heading</h1>",
+                  "<p>My first paragraph.</p>"
+                ],
+                "table": {
+                  "headers": ["Start tag", "Element content", "End tag"],
+                  "rows": [
+                    ["<h1>", "My First Heading", "</h1>"],
+                    ["<p>", "My first paragraph.", "</p>"],
+                    ["<br>", "none", "none"]
+                  ]
+                }
+              },
+              {
+                "title": "HTML History",
+                "description": [
+                  "Since the early days of the World Wide Web, there have been many versions of HTML:"
+                ],
+                "table": {
+                  "headers": ["Year", "Version"],
+                  "rows": [
+                    ["1989", "Tim Berners-Lee invented www"],
+                    ["1991", "Tim Berners-Lee invented HTML"],
+                    ["1993", "Dave Raggett drafted HTML+"],
+                    ["1995", "HTML Working Group defined HTML 2.0"],
+                    ["1997", "W3C Recommendation: HTML 3.2"],
+                    ["1999", "W3C Recommendation: HTML 4.01"],
+                    ["2000", "W3C Recommendation: XHTML 1.0"],
+                    ["2008", "WHATWG HTML5 First Public Draft"],
+                    ["2012", "WHATWG HTML5 Living Standard"],
+                    ["2014", "W3C Recommendation: HTML5"],
+                    ["2016", "W3C Candidate Recommendation: HTML 5.1"],
+                    ["2017", "W3C Recommendation: HTML5.1 2nd Edition"],
+                    ["2017", "W3C Recommendation: HTML5.2"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Elements",
+            "title": "HTML Elements",
+            "description": [
+              "<tagname> Content goes here... </tagname>",
+              "The HTML element is everything from the start tag to the end tag:",
+              "<h1>My First Heading</h1>",
+              "<p>My first paragraph.</p>"
+            ],
+            "table": {
+              "headers": ["Start tag", "Element content", "End tag"],
+              "rows": [
+                ["<h1>", "My First Heading", "</h1>"],
+                ["<p>", "My first paragraph.", "</p>"],
+                ["<br>", "none", "none"]
+              ]
+            },
+            "subtopics": [
+              {
+                "title": "Nested HTML Elements",
+                "description": [
+                  "HTML elements can be nested (this means that elements can contain other elements).",
+                  "All HTML documents consist of nested HTML elements.",
+                  "The following example contains four HTML elements (<html>, <body>, <h1> and <p>):"
+                ],
+                "code": "<h1>My First Heading</h1><p>My first paragraph.</p>"
+              },
+              {
+                "title": "Never Skip the End Tag",
+                "description": [
+                  "Some HTML elements will display correctly, even if you forget the end tag:"
+                ],
+                "code": "<p>This is a paragraph<p>This is a paragraph"
+              },
+              {
+                "title": "Empty HTML Elements",
+                "description": [
+                  "HTML elements with no content are called empty elements.",
+                  "The <br> tag defines a line break, and is an empty element without a closing tag:"
+                ],
+                "code": "<p>This is a <br> paragraph with a line break.</p>"
+              },
+              {
+                "title": "HTML is Not Case Sensitive",
+                "description": [
+                  "HTML tags are not case sensitive: <P> means the same as <p>.",
+                  "The HTML standard does not require lowercase tags, but CodingHub recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML."
+                ],
+                "code": "<H1>This is valid</H1> <h1>This is preferred</h1>"
+              },
+              {
+                "title": "HTML Tag Reference",
+                "description": [
+                  "CodingHub' tag reference contains additional information about these tags and their attributes."
+                ],
+                "table": {
+                  "headers": ["Tag", "Description"],
+                  "rows": [
+                    ["<html>", "Defines the root of an HTML document"],
+                    ["<body>", "Defines the document's body"],
+                    ["<h1> to <h6>", "Defines HTML headings"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Attributes",
+            "title": "HTML Attributes",
+            "description": [
+              "All HTML elements can have attributes",
+              "Attributes provide additional information about elements",
+              "Attributes are always specified in the start tag",
+              "Attributes usually come in name/value pairs like: name=\"value\""
+            ],
+            "subtopics": [
+              {
+                "title": "The href Attribute",
+                "description": [
+                  "The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:"
+                ],
+                "code": "<a href=\"https://www.w3schools.com\">Visit CodingHub</a>"
+              },
+              {
+                "title": "The src Attribute",
+                "description": [
+                  "The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:"
+                ],
+                "code": "<img src=\"img_girl.jpg\">"
+              },
+              {
+                "title": "The width and height Attribute",
+                "description": [
+                  "The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):"
+                ],
+                "code": "<img src=\"img_girl.jpg\" width=\"500\" height=\"600\">"
+              },
+              {
+                "title": "The alt Atrribute",
+                "description": [
+                  "The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader."
+                ],
+                "code": "<img src=\"img_girl.jpg\" alt=\"Girl with a jacket\">"
+              },
+              {
+                "title": "The style Atrribute",
+                "description": [
+                  "The style attribute is used to add styles to an element, such as color, font, size, and more."
+                ],
+                "code": "<p style=\"color:red;\">This is a red paragraph.</p>"
+              },
+              {
+                "title": "The lang Attribute",
+                "description": [
+                  "You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.",
+                  "The following example specifies English as the language:"
+                ],
+                "code": "<h2>Check the lang attribute of html</h2>"
+              },
+              {
+                "title": "The title Attribute",
+                "description": [
+                  "The title attribute defines some extra information about an element.",
+                  "The value of the title attribute will be displayed as a tooltip when you mouse over the element:"
+                ],
+                "code": "<p title=\"I'm a tooltip\">This is a paragraph.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Headings",
+            "title": "HTML Headings",
+            "description": [
+              "HTML headings are defined with the <h1> to <h6> tags.",
+              "<h1> defines the most important heading. <h6> defines the least important heading."
+            ],
+            "code": "<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><h6>Heading 6</h6>",
+            "subtopics": [
+              {
+                "title": "Headings are Important",
+                "description": [
+                  "Search engines use the headings to index the structure and content of your web pages.",
+                  "Users often skim a page by its headings. It is important to use headings to show the document structure.",
+                  "<h1> headings should be used for main headings, followed by <h2> headings, then the less important <h3>, and so on."
+                ]
+              },
+              {
+                "title": "Bigger Headings",
+                "description": [
+                  "Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:"
+                ],
+                "code": "<h1 style=\"font-size:60px;\">Heading 1</h1>"
+              },
+              {
+                "title": "HTML Tag Reference",
+                "description": [
+                  "CodingHub's tag reference contains additional information about these tags and their attributes."
+                ],
+                "table": {
+                  "headers": ["Tag", "Description"],
+                  "rows": [
+                    ["<html>", "Defines the root of an HTML document"],
+                    ["<body>", "Defines the document's body"],
+                    ["<h1> to <h6>", "Defines HTML headings"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Paragraphs",
+            "title": "HTML Paragraphs",
+            "description": [
+              "The HTML <p> element defines a paragraph.",
+              "A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph."
+            ],
+            "code": "<p>This is a paragraph.</p><p>This is another paragraph.</p>",
+            "subtopics": [
+              {
+                "title": "HTML Display",
+                "description": [
+                  "You cannot be sure how HTML will be displayed.",
+                  "Large or small screens, and resized windows will create different results.",
+                  "With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.",
+                  "The browser will automatically remove any extra spaces and lines when the page is displayed:"
+                ],
+                "code": "<p>This paragraph contains a lot of lines in the source code, but the browser ignores it.</p><p> This paragraph contains         a lot of spaces in the source         code, but the        browser ignores it. </p>"
+              },
+              {
+                "title": "HTML Horizontal rules",
+                "description": [
+                  "The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.",
+                  "The <hr> element is used to separate content (or define a change) in an HTML page:"
+                ],
+                "code": "<h1>This is heading 1</h1><p>This is some text.</p><hr><h2>This is heading 2</h2><p>This is some other text.</p><hr>"
+              },
+              {
+                "title": "HTML Line Breaks",
+                "description": [
+                  "Use <br> to create line breaks within content."
+                ],
+                "code": "<p>Line one<br>Line two</p>"
+              },
+              {
+                "title": "The HTML <pre> Element",
+                "description": [
+                  "The HTML <pre> element defines preformatted text.",
+                  "The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:"
+                ],
+                "code": "<pre>\nMy Bonnie lies over the ocean.\nMy Bonnie lies over the sea.\nMy Bonnie lies over the ocean.\nOh, bring back my Bonnie to me.</pre>"
+              }
+            ]
+          },
+          {
+            "name": "Styles",
+            "title": "HTML Styles",
+            "description": [
+              "The HTML style attribute is used to add styles to an element, such as color, font, size, and more."
+            ],
+            "code": "<p>I am normal</p> <p style=\"color:red;\">I am red</p> <p style=\"color:blue;\">I am blue</p> <p style=\"font-size:50px;\">I am big</p>",
+            "subtopics": [
+              {
+                "title": "The HTML Style Attribute",
+                "description": [
+                  "Setting the style of an HTML element, can be done with the style attribute.",
+                  "The HTML style attribute has the following syntax:"
+                ],
+                "code": "<tagname style=\"property:value;\">Hi</tagname>"
+              },
+              {
+                "title": "Background Color",
+                "description": [
+                  "The CSS background-color property defines the background color for an HTML element."
+                ],
+                "code": "<div style=\"background-color:powderblue;\"> <h1>This is a heading</h1> <p>This is a paragraph.</p> </div>"
+              },
+              {
+                "title": "Text Color",
+                "description": [
+                  "The CSS color property defines the text color for an HTML element:"
+                ],
+                "code": "<h1 style=\"color:blue;\">This is a heading</h1> <p style=\"color:red;\">This is a paragraph.</p>"
+              },
+              {
+                "title": "Fonts",
+                "description": [
+                  "The CSS font-family property defines the font to be used for an HTML element:"
+                ],
+                "code": "<h1 style=\"font-family:verdana;\">This is a heading</h1> <p style=\"font-family:courier;\">This is a paragraph.</p>"
+              },
+              {
+                "title": "Text Size",
+                "description": [
+                  "The CSS font-size property defines the text size for an HTML element:"
+                ],
+                "code": "<h1 style=\"font-size:300%;\">This is a heading</h1> <p style=\"font-size:160%;\">This is a paragraph.</p>"
+              },
+              {
+                "title": "Text Alignment",
+                "description": [
+                  "The CSS text-align property defines the horizontal text alignment for an HTML element:"
+                ],
+                "code": "<h1 style=\"text-align:center;\">Centered Heading</h1> <p style=\"text-align:center;\">Centered paragraph.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Formatting",
+            "title": "HTML Formatting",
+            "description": [
+              "<p><b>This text is bold</b></p> <p><i>This text is italic</i></p> <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>"
+            ],
+            "subtopics": [
+              {
+                "title": "HTML <b> and <strong> Elements",
+                "description": [
+                  "The HTML <b> element defines bold text, without any extra importance.",
+                  "The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold."
+                ],
+                "code": "<b>This text is bold</b><strong>This text is important!</strong>"
+              },
+              {
+                "title": "HTML <i> and <em> Elements",
+                "description": [
+                  "The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.",
+                  "The HTML <em> element defines emphasized text. The content inside is typically displayed in italic."
+                ],
+                "code": "<i>This text is italic</i><em>This text is emphasized</em>"
+              },
+              {
+                "title": "HTML <small> Element",
+                "description": [
+                  "The HTML <small> element defines smaller text:"
+                ],
+                "code": "<small>This is some smaller text.</small>"
+              },
+              {
+                "title": "HTML <mark> Element",
+                "description": [
+                  "The HTML <mark> element defines text that should be marked or highlighted:"
+                ],
+                "code": "<p>Do not forget to buy <mark>milk</mark> today.</p>"
+              },
+              {
+                "title": "HTML <del> Element",
+                "description": [
+                  "The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:"
+                ],
+                "code": "<p>My favorite color is <del>blue</del> red.</p>"
+              },
+              {
+                "title": "HTML <ins> Element",
+                "description": [
+                  "The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:"
+                ],
+                "code": "<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>"
+              },
+              {
+                "title": "HTML <sub> Element",
+                "description": [
+                  "The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:"
+                ],
+                "code": "<p>This is <sub>subscripted</sub> text.</p>"
+              },
+              {
+                "title": "HTML <sup> Element",
+                "description": [
+                  "The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:"
+                ],
+                "code": "<p>This is <sup>superscripted</sup> text.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Quotations",
+            "title": "HTML Quotations",
+            "description": [
+              "In this chapter we will go through the <blockquote>,<q>, <abbr>, <address>, <cite>, and <bdo> HTML elements."
+            ],
+            "code": "<p>Here is a quote from WWF's website:</p> <blockquote cite=\"http://www.worldwildlife.org/who/index.html\"> For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live. </blockquote>",
+            "subtopics": [
+              {
+                "title": "HTML <blockquote> for Quotations",
+                "description": [
+                  "The HTML <blockquote> element defines a section that is quoted from another source.",
+                  "Browsers usually indent <blockquote> elements."
+                ],
+                "code": "<p>Here is a quote from WWF's website:</p> <blockquote cite=\"http://www.worldwildlife.org/who/index.html\"> For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live. </blockquote>"
+              },
+              {
+                "title": "HTML <q> for Short Quotations",
+                "description": [
+                  "The HTML <q> tag defines a short quotation.",
+                  "Browsers normally insert quotation marks around the quotation."
+                ],
+                "code": "<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>"
+              },
+              {
+                "title": "HTML <abbr> for Abbreviations",
+                "description": [
+                  "The HTML <abbr> tag defines an abbreviation or an acronym, like \"HTML\", \"CSS\", \"Mr.\", \"Dr.\", \"ASAP\", \"ATM\".",
+                  "Marking abbreviations can give useful information to browsers, translation systems and search-engines."
+                ],
+                "code": "<p>The <abbr title=\"World Health Organization\">WHO</abbr> was founded in 1948.</p>"
+              },
+              {
+                "title": "HTML <address> for Contact Information",
+                "description": [
+                  "The HTML <address> tag defines the contact information for the author/owner of a document or an article.",
+                  "The contact information can be an email address, URL, physical address, phone number, social media handle, etc.",
+                  "The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element."
+                ],
+                "code": "<address> Written by John Doe.<br> Visit us at:<br> Example.com<br> Box 564, Disneyland<br> USA </address>"
+              },
+              {
+                "title": "HTML <cite> for Work Title",
+                "description": [
+                  "The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).",
+                  "The text in the <cite> element usually renders in italic."
+                ],
+                "code": "<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>"
+              },
+              {
+                "title": "HTML <bdo> for Bi-Directional Override",
+                "description": [
+                  "BDO stands for Bi-Directional Override.",
+                  "The HTML <bdo> tag is used to override the current text direction:"
+                ],
+                "code": "<bdo dir=\"rtl\">This text will be written from right to left</bdo>"
+              },
+              {
+                "title": "HTML Quotation and Citation Elements",
+                "description": [""],
+                "table": {
+                  "headers": ["Tag", "Description"],
+                  "rows": [
+                    ["<abbr>", "Defines an abbreviation or acronym"],
+                    [
+                      "<address>",
+                      "Defines contact information for the author/owner of a document"
+                    ],
+                    ["<bdo>", "Defines the text direction"],
+                    [
+                      "<blockquote>",
+                      "Defines a section that is quoted from another source"
+                    ],
+                    ["<cite>", "Defines the title of a work"],
+                    ["<q>", "Defines a short inline quotation"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Comments",
+            "title": "HTML Comments",
+            "description": [
+              "HTML comments are not displayed in the browser, but they can help document your HTML source code."
+            ],
+            "subtopics": [
+              {
+                "title": "HTML Comment Tag",
+                "description": [
+                  "You can add comments to your HTML source by using the following syntax:"
+                ],
+                "code": "<!-- Write your comments here -->"
+              },
+              {
+                "title": "Add Comments",
+                "description": [
+                  "With comments you can place notifications and reminders in your HTML code:"
+                ],
+                "code": "<!-- This is a comment --> <p>This is a paragraph.</p> <!-- Remember to add more information here -->"
+              },
+              {
+                "title": "Hide Content",
+                "description": [
+                  "Comments can be used to hide content.",
+                  "This can be helpful if you hide content temporarily:"
+                ],
+                "code": "<p>This is a paragraph.</p> <!-- <p>This is another paragraph </p> --> <p>This is a paragraph too.</p>"
+              },
+              {
+                "title": "Hide Inline Content",
+                "description": [
+                  "Comments can be used to hide parts in the middle of the HTML code."
+                ],
+                "code": "<p>This <!-- great text --> is a paragraph.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Colors",
+            "title": "HTML Colors",
+            "description": [
+              "HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values."
+            ],
+            "subtopics": [
+              {
+                "title": "Color Names",
+                "description": [
+                  "In HTML, a color can be specified by using a color name:"
+                ],
+                "code": "<h1 style=\"background-color:Tomato;\">Tomato</h1> <h1 style=\"background-color:Orange;\">Orange</h1> <h1 style=\"background-color:DodgerBlue;\">DodgerBlue</h1> <h1 style=\"background-color:MediumSeaGreen;\">MediumSeaGreen</h1> <h1 style=\"background-color:Gray;\">Gray</h1> <h1 style=\"background-color:SlateBlue;\">SlateBlue</h1> <h1 style=\"background-color:Violet;\">Violet</h1> <h1 style=\"background-color:LightGray;\">LightGray</h1>"
+              },
+              {
+                "title": "RGB",
+                "description": [
+                  "An RGB color value represents RED, GREEN, and BLUE light sources.",
+                  "An RGBA color value is an extension of RGB with an Alpha channel (opacity)."
+                ],
+                "code": "<h1 style=\"background-color:rgb(255, 0, 0);\">rgb(255, 0, 0)</h1> <h1 style=\"background-color:rgb(0, 0, 255);\">rgb(0, 0, 255)</h1> <h1 style=\"background-color:rgb(60, 179, 113);\">rgb(60, 179, 113)</h1> <h1 style=\"background-color:rgb(238, 130, 238);\">rgb(238, 130, 238)</h1> <h1 style=\"background-color:rgb(255, 165, 0);\">rgb(255, 165, 0)</h1> <h1 style=\"background-color:rgb(106, 90, 205);\">rgb(106, 90, 205)</h1>"
+              },
+              {
+                "title": "HEX",
+                "description": [
+                  "A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color."
+                ],
+                "code": "<h1 style=\"background-color:#ff0000;\">#ff0000</h1> <h1 style=\"background-color:#0000ff;\">#0000ff</h1> <h1 style=\"background-color:#3cb371;\">#3cb371</h1> <h1 style=\"background-color:#ee82ee;\">#ee82ee</h1> <h1 style=\"background-color:#ffa500;\">#ffa500</h1> <h1 style=\"background-color:#6a5acd;\">#6a5acd</h1>"
+              },
+              {
+                "title": "HSL",
+                "description": [
+                  "HSL stands for hue, saturation, and lightness.",
+                  "HSLA color values are an extension of HSL with an Alpha channel (opacity)."
+                ],
+                "code": "<h1 style=\"background-color:hsl(0, 100%, 50%);\">hsl(0, 100%, 50%)</h1> <h1 style=\"background-color:hsl(240, 100%, 50%);\">hsl(240, 100%, 50%)</h1> <h1 style=\"background-color:hsl(147, 50%, 47%);\">hsl(147, 50%, 47%)</h1> <h1 style=\"background-color:hsl(300, 76%, 72%);\">hsl(300, 76%, 72%)</h1> <h1 style=\"background-color:hsl(39, 100%, 50%);\">hsl(39, 100%, 50%)</h1> <h1 style=\"background-color:hsl(248, 53%, 58%);\">hsl(248, 53%, 58%)</h1>"
+              }
+            ]
+          },
+          {
+            "name": "CSS",
+            "title": "HTML CSS",
+            "description": [
+              "CSS stands for Cascading Style Sheets.",
+              "CSS saves a lot of work. It can control the layout of multiple web pages all at once."
+            ],
+            "subtopics": [
+              {
+                "title": "What is CSS?",
+                "description": [
+                  "Cascading Style Sheets (CSS) is used to format the layout of a webpage."
+                ]
+              },
+              {
+                "title": "Using CSS",
+                "description": [
+                  "CSS can be added to HTML documents in 3 ways:",
+                  "Inline - by using the style attribute inside HTML elements",
+                  "Internal - by using a <style> element in the <head> section",
+                  "External - by using a <link> element to link to an external CSS file",
+                  "The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself."
+                ]
+              },
+              {
+                "title": "Inline CSS",
+                "description": [
+                  "An inline CSS is used to apply a unique style to a single HTML element.",
+                  "An inline CSS uses the style attribute of an HTML element.",
+                  "The following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red:"
+                ],
+                "code": "<h1 style=\"color:blue;\">A Blue Heading</h1> <p style=\"color:red;\">A red paragraph.</p>"
+              },
+              {
+                "title": "Internal CSS",
+                "description": [
+                  "An internal CSS is used to define a style for a single HTML page.",
+                  "An internal CSS is defined in the <head> section of an HTML page, within a <style> element.",
+                  "The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. In addition, the page will be displayed with a \"powderblue\" background color: "
+                ],
+                "code": "<style> body {background-color: powderblue;} h1   {color: blue;} p    {color: red;} </style><h1>This is a heading</h1><p>This is a paragraph.</p>"
+              },
+              {
+                "title": "External CSS",
+                "description": [
+                  "An external style sheet is used to define the style for many HTML pages.",
+                  "To use an external style sheet, add a link to it in the <head> section of each HTML page:"
+                ],
+                "code": "<h1>This is a heading</h1><p>This is a paragraph.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Links",
+            "title": "HTML Links",
+            "description": [
+              "Links are found in nearly all web pages. Links allow users to click their way from page to page."
+            ],
+            "subtopics": [
+              {
+                "title": "HTML Links-Hyperlinks",
+                "description": [
+                  "HTML links are hyperlinks.",
+                  "You can click on a link and jump to another document.",
+                  "When you move the mouse over a link, the mouse arrow will turn into a little hand."
+                ]
+              },
+              {
+                "title": "HTML Links - Syntax",
+                "description": [
+                  "The HTML <a> tag defines a hyperlink. It has the following syntax:"
+                ],
+                "code": "<a href=\"url\">link text</a>"
+              },
+              {
+                "title": "HTML Links - The target Attribute",
+                "description": [
+                  "By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.",
+                  "The target attribute specifies where to open the linked document.",
+                  "The target attribute can have one of the following values:",
+                  "_self - Default. Opens the document in the same window/tab as it was clicked",
+                  "_blank - Opens the document in a new window or tab",
+                  "_parent - Opens the document in the parent frame",
+                  "_top - Opens the document in the full body of the window"
+                ],
+                "code": "<a href=\"https://www.w3schools.com/\" target=\"_blank\">Visit CodingHub!</a>"
+              },
+              {
+                "title": "HTML Links - Use an Image as a Link",
+                "description": [
+                  "To use an image as a link, just put the <img> tag inside the <a> tag:"
+                ],
+                "code": "<a href=\"default.asp\"> <img src=\"smiley.gif\" alt=\"HTML tutorial\" style=\"width:42px;height:42px;\"> </a>"
+              },
+              {
+                "title": "Link to an Email Address",
+                "description": [
+                  "Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):"
+                ],
+                "code": "<a href=\"mailto:someone@example.com\">Send email</a>"
+              }
+            ]
+          },
+          {
+            "name": "Favicon",
+            "title": "HTML Favicon",
+            "description": [
+              "A favicon is a small image displayed next to the page title in the browser tab."
+            ],
+            "subtopics": [
+              {
+                "title": "How To Add a Favicon in HTML",
+                "description": [
+                  "You can use any image you like as your favicon. You can also create your own favicon on sites like https://www.favicon.cc."
+                ]
+              },
+              {
+                "title": "Favicon File Format Support",
+                "description": [
+                  "The following table shows the file format support for a favicon image:"
+                ],
+                "table": {
+                  "headers": ["Browser", "ICO", "PNG", "GIF", "JPEG", "SVG"],
+                  "rows": [
+                    ["Edge", "Yes", "Yes", "Yes", "Yes", "Yes"],
+                    ["Chrome", "Yes", "Yes", "Yes", "Yes", "Yes"],
+                    ["Firefox", "Yes", "Yes", "Yes", "Yes", "Yes"],
+                    ["Opera", "Yes", "Yes", "Yes", "Yes", "Yes"],
+                    ["Safari", "Yes", "Yes", "Yes", "Yes", "Yes"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "PageTitle",
+            "title": "HTML Page Title",
+            "description": [
+              "Every web page should have a page title to describe the meaning of the page."
+            ],
+            "subtopics": [
+              {
+                "title": "The Title Element",
+                "description": [
+                  "The <title> element adds a title to your page:"
+                ],
+                "code": "Live Preview is the title here"
+              },
+              {
+                "title": "What is a Good Title?",
+                "description": [
+                  "The title should describe the content and the meaning of the page.",
+                  "The page title is very important for search engine optimization (SEO). The text is used by search engine algorithms to decide the order when listing pages in search results.",
+                  "The <title> element:defines a title in the browser toolbar, provides a title for the page when it is added to favorites, displays a title for the page in search engine-results",
+                  "So, try to make the title as accurate and meaningful as possible!"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tables",
+            "title": "HTML Tables",
+            "description": [
+              "HTML tables allow web developers to arrange data into rows and columns."
+            ],
+            "table": {
+              "headers": ["Company", "Contact", "Country"],
+              "rows": [
+                ["Alfreds Futterkiste", "Maria Anders", "Germany"],
+                ["Centro comercial Moctezuma", "Francisco Chang", "Mexico"],
+                ["Ernst Handel", "Roland Mendel", "Austria"],
+                ["Island Trading", "Helen Bennett", "UK"],
+                ["Laughing Bacchus Winecellars", "Yoshi Tannamuri", "Canada"],
+                ["Magazzini Alimentari Riuniti", "Giovanni Rovelli", "Italy"]
+              ]
+            },
+            "subtopics": [
+              {
+                "title": "Define an HTML Table",
+                "description": [
+                  "A table in HTML consists of table cells inside rows and columns."
+                ],
+                "code": "<table> <tr> <th>Company</th> <th>Contact</th> <th>Country</th> </tr> <tr> <td>Alfreds Futterkiste</td> <td>Maria Anders</td> <td>Germany</td> </tr> <tr> <td>Centro comercial Moctezuma</td> <td>Francisco Chang</td> <td>Mexico</td> </tr> </table>"
+              },
+              {
+                "title": "Table Cells",
+                "description": [
+                  "Each table cell is defined by a <td> and a </td> tag.",
+                  "Everything between <td> and </td> is the content of a table cell."
+                ],
+                "code": "<table><tr><td>Emil</td><td>Tobias</td><td>Linus</td></tr></table>"
+              },
+              {
+                "title": "Table Rows",
+                "description": [
+                  "Each table row starts with a <tr> and ends with a </tr> tag.",
+                  "tr stands for table row."
+                ],
+                "code": "<table><tr><td>Emil</td><td>Tobias</td><td>Linus</td></tr><tr><td>16</td><td>14</td><td>10</td></tr></table>"
+              },
+              {
+                "title": "Table Headers",
+                "description": [
+                  "Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:",
+                  "th stands for table header."
+                ],
+                "code": "<table> <tr> <th>Person 1</th> <th>Person 2</th> <th>Person 3</th> </tr> <tr> <td>Emil</td> <td>Tobias</td> <td>Linus</td> </tr> <tr> <td>16</td> <td>14</td> <td>10</td> </tr> </table>"
+              }
+            ]
+          },
+          {
+            "name": "Lists",
+            "title": "HTML Lists",
+            "description": [
+              "HTML lists allow web developers to group a set of related items in lists."
+            ],
+            "code": "<h2>An Unordered HTML List</h2> <ul> <li>Coffee</li> <li>Tea</li> <li>Milk</li> </ul> <h2>An Ordered HTML List</h2> <ol> <li>Coffee</li> <li>Tea</li> <li>Milk</li> </ol>",
+            "subtopics": [
+              {
+                "title": "Unordered HTML List",
+                "description": [
+                  "An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.",
+                  "The list items will be marked with bullets (small black circles) by default:"
+                ],
+                "code": "<ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>"
+              },
+              {
+                "title": "Ordered HTML List",
+                "description": [
+                  "An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.",
+                  "The list items will be marked with numbers by default:"
+                ],
+                "code": "<ol><li>Coffee</li><li>Tea</li><li>Milk</li></ol>"
+              },
+              {
+                "title": "HTML Description Lists",
+                "description": [
+                  "HTML also supports description lists.",
+                  "A description list is a list of terms, with a description of each term.",
+                  "The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:"
+                ],
+                "code": "<dl> <dt>Coffee</dt> <dd>- black hot drink</dd> <dt>Milk</dt> <dd>- white cold drink</dd> </dl>"
+              }
+            ]
+          },
+          {
+            "name": "BlockInline",
+            "title": "HTML Block & Inline",
+            "description": [
+              "Every HTML element has a default display value, depending on what type of element it is.",
+              "The two most common display values are block and inline."
+            ],
+            "subtopics": [
+              {
+                "title": "Block-level Elements",
+                "description": [
+                  "A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.",
+                  "A block-level element always takes up the full width available (stretches out to the left and right as far as it can).",
+                  "Two commonly used block elements are: <p> and <div>.",
+                  "The <p> element defines a paragraph in an HTML document.",
+                  "The <div> element defines a division or a section in an HTML document.",
+                  "Here are the block-level elements in HTML:",
+                  "<address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>"
+                ],
+                "code": "<p>Hello World</p> <div>Hello World</div>"
+              },
+              {
+                "title": "Inline Elements",
+                "description": [
+                  "An inline element does not start on a new line.",
+                  "An inline element only takes up as much width as necessary.",
+                  "This is a <span> element inside a paragraph.",
+                  "Here are the inline elements in HTML:",
+                  "<a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <output>, <q>, <samp>, <script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>, <time>, <tt>, <var>"
+                ],
+                "code": "<span>Hello World</span>"
+              },
+              {
+                "title": "The <div> Element",
+                "description": [
+                  "The <div> element is often used as a container for other HTML elements.",
+                  "The <div> element has no required attributes, but style, class and id are common.",
+                  "When used together with CSS, the <div> element can be used to style blocks of content:"
+                ],
+                "code": "<div style=\"background-color:black;color:white;padding:20px;\"> <h2>London</h2> <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p> </div>"
+              },
+              {
+                "title": "The <span> Element",
+                "description": [
+                  "The <span> element is an inline container used to mark up a part of a text, or a part of a document.",
+                  "The <span> element has no required attributes, but style, class and id are common.",
+                  "When used together with CSS, the <span> element can be used to style parts of the text:"
+                ],
+                "code": "<p>My mother has <span style=\"color:blue;font-weight:bold;\">blue</span> eyes and my father has <span style=\"color:darkolivegreen;font-weight:bold;\">dark green</span> eyes.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Div",
+            "title": "HTML Div",
+            "description": [
+              "The <div> element is used as a container for other HTML elements."
+            ],
+            "subtopics": [
+              {
+                "title": "The <div> Element",
+                "description": [
+                  "The <div> element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after."
+                ],
+                "code": "Lorem Ipsum <div>I am a div</div> dolor sit amet."
+              },
+              {
+                "title": "<div> as a container",
+                "description": [
+                  "The <div> element is often used to group sections of a web page together."
+                ],
+                "code": "<div> <h2>London</h2> <p>London is the capital city of England.</p> <p>London has over 9 million inhabitants.</p> </div>"
+              },
+              {
+                "title": "Center align a <div> element",
+                "description": [
+                  "If you have a <div> element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto."
+                ],
+                "code": "<div> <h2>London</h2> <p>London is the capital city of England.</p> <p>London has over 9 million inhabitants.</p> </div>"
+              },
+              {
+                "title": "Multiple <div> elements",
+                "description": [
+                  "You can have many <div> containers on the same page."
+                ],
+                "code": "<div style=\"background-color:#FFF4A3;\"> <h2>London</h2> <p>London is the capital city of England.</p> <p>London has over 9 million inhabitants.</p> </div> <div style=\"background-color:#FFC0C7;\"> <h2>Oslo</h2> <p>Oslo is the capital city of Norway.</p> <p>Oslo has over 700,000 inhabitants.</p> </div> <div style=\"background-color:#D9EEE1;\"> <h2>Rome</h2> <p>Rome is the capital city of Italy.</p> <p>Rome has over 4 million inhabitants.</p> </div>"
+              },
+              {
+                "title": "Inline-block",
+                "description": [
+                  "If you change the <div> element's display property from block to inline-block, the <div> elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other."
+                ],
+                "code": "<div style=\"background-color:#FFF4A3;\"> <h2>London</h2> <p>London is the capital city of England.</p> <p>London has over 9 million inhabitants.</p> </div> <div style=\"background-color:#FFC0C7;\"> <h2>Oslo</h2> <p>Oslo is the capital city of Norway.</p> <p>Oslo has over 700,000 inhabitants.</p> </div> <div style=\"background-color:#D9EEE1;\"> <h2>Rome</h2> <p>Rome is the capital city of Italy.</p> <p>Rome has over 4 million inhabitants.</p> </div>"
+              }
+            ]
+          },
+          {
+            "name": "Classes",
+            "title": "HTML Classes",
+            "description": [
+              "The HTML class attribute is used to specify a class for an HTML element.",
+              "Multiple HTML elements can share the same class."
+            ],
+            "subtopics": [
+              {
+                "title": "The class Attribute",
+                "description": [
+                  "The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.",
+                  "In the following example we have three <div> elements with a class attribute with the value of \"city\". All of the three <div> elements will be styled equally according to the .city style definition in the head section:"
+                ],
+                "code": "<div class=\"city\"> <h2>London</h2> <p>London is the capital of England.</p> </div> <div class=\"city\"> <h2>Paris</h2> <p>Paris is the capital of France.</p> </div> <div class=\"city\"> <h2>Tokyo</h2> <p>Tokyo is the capital of Japan.</p> </div>"
+              },
+              {
+                "title": "Different Elements Can Share Same Class",
+                "description": [
+                  "Different HTML elements can point to the same class name.",
+                  "In the following example, both <h2> and <p> point to the \"city\" class and will share the same style:"
+                ],
+                "code": "<h2 class=\"city\">Paris</h2> <p class=\"city\">Paris is the capital of France</p>"
+              }
+            ]
+          },
+          {
+            "name": "Id",
+            "title": "HTML Id",
+            "description": [
+              "The HTML id attribute is used to specify a unique id for an HTML element.",
+              "You cannot have more than one element with the same id in an HTML document."
+            ],
+            "subtopics": [
+              {
+                "title": "The id Attribute",
+                "description": [
+                  "The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.",
+                  "The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.",
+                  "The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.",
+                  "In the following example we have an <h1> element that points to the id name \"myHeader\". This <h1> element will be styled according to the #myHeader style definition in the head section:"
+                ],
+                "code": "<h1 id=\"myHeader\">My Header</h1>"
+              },
+              {
+                "title": "Difference Between Class and ID",
+                "description": [
+                  "A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:",
+                  "Use '#' in CSS for ID and '.' for class."
+                ],
+                "code": "<!-- An element with a unique id --> <h1 id=\"myHeader\">My Cities</h1> <br/> <!-- Multiple elements with same class --> <h2 class=\"city\">London</h2> <p>London is the capital of England.</p> <h2 class=\"city\">Paris</h2> <p>Paris is the capital of France.</p> <h2 class=\"city\">Tokyo</h2> <p>Tokyo is the capital of Japan.</p>"
+              }
+            ]
+          },
+          {
+            "name": "Iframes",
+            "title": "HTML Iframes",
+            "description": [
+              "An HTML iframe is used to display a web page within a web page."
+            ],
+            "subtopics": [
+              {
+                "title": "HTML Iframe Syntax",
+                "description": [
+                  "The HTML <iframe> tag specifies an inline frame.",
+                  "An inline frame is used to embed another document within the current HTML document."
+                ],
+                "code": "<iframe src=\"https://example.com\" title=\"description\"></iframe>"
+              },
+              {
+                "title": "Iframe - Set Height and Width",
+                "description": [
+                  "Use the height and width attributes to specify the size of the iframe.",
+                  "The height and width are specified in pixels by default:"
+                ],
+                "code": "<iframe src=\"https://example.com\" height=\"200\" width=\"300\" title=\"Iframe Example\"></iframe>"
+              }
+            ]
+          },
+          {
+            "name": "JavaScript",
+            "title": "HTML JavaScript",
+            "description": [
+              "JavaScript makes HTML pages more dynamic and interactive."
+            ],
+            "code": "<h1>My First JavaScript</h1> <button type=\"button\" onclick=\"document.getElementById('demo').innerHTML = Date()\"> Click me to display Date and Time.</button> <p id=\"demo\"></p>",
+            "subtopics": [
+              {
+                "title": "The HTML <script> Tag",
+                "description": [
+                  "The HTML <script> tag is used to define a client-side script (JavaScript).",
+                  "The <script> element either contains script statements, or it points to an external script file through the src attribute.",
+                  "Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.",
+                  "To select an HTML element, JavaScript most often uses the document.getElementById() method.",
+                  "This JavaScript example writes \"Hello JavaScript!\" into an HTML element with id=\"demo\":"
+                ],
+                "code": "<h2>Use JavaScript to Change Text</h2> <p>This example writes \"Hello JavaScript!\" into an HTML element with id=\"demo\":</p> <p id=\"demo\"></p><script> document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\"; </script>"
+              }
+            ]
+          },
+          {
+            "name": "FilePaths",
+            "title": "HTML File Paths",
+            "description": [
+              "A file path describes the location of a file in a web site's folder structure.",
+              "File paths are used when linking to external files, like:",
+              "Web pages",
+              "Images",
+              "Style sheets",
+              "JavaScripts"
+            ],
+            "subtopics": [
+              {
+                "title": "File Path Examples",
+                "description": [""],
+                "table": {
+                  "headers": ["Path", "Description"],
+                  "rows": [
+                    [
+                      "<img src=\"picture.jpg\">",
+                      "The \"picture.jpg\" file is located in the same folder as the current page"
+                    ],
+                    [
+                      "<img src=\"images/picture.jpg\">",
+                      "The \"picture.jpg\" file is located in the images folder in the current folder"
+                    ],
+                    [
+                      "<img src=\"/images/picture.jpg\">",
+                      "The \"picture.jpg\" file is located in the images folder at the root of the current web"
+                    ],
+                    [
+                      "<img src=\"../picture.jpg\">",
+                      "The \"picture.jpg\" file is located in the folder one level up from the current folder"
+                    ]
+                  ]
+                }
+              },
+              {
+                "title": "Absolute File Paths",
+                "description": [
+                  "Absolute paths specify the full URL to a file."
+                ],
+                "code": "<img src=\"https://www.w3schools.com/images/picture.jpg\" alt=\"Mountain\">"
+              },
+              {
+                "title": "Relative File Paths",
+                "description": [
+                  "A relative file path points to a file relative to the current page.",
+                  "In the following example, the file path points to a file in the images folder located at the root of the current web:"
+                ],
+                "code": "<img src=\"/images/picture.jpg\" alt=\"Mountain\">"
+              }
+            ]
+          },
+          {
+            "name": "Head",
+            "title": "HTML Head",
+            "description": [
+              "The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>."
+            ],
+            "subtopics": [
+              {
+                "title": "The HTML <head> Element",
+                "description": [
+                  "The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.",
+                  "HTML metadata is data about the HTML document. Metadata is not displayed on the page.",
+                  "Metadata typically define the document title, character set, styles, scripts, and other meta information."
+                ]
+              },
+              {
+                "title": "The HTML <title> Element",
+                "description": [
+                  "The <title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.",
+                  "The <title> element is required in HTML documents!",
+                  "The content of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.",
+                  "The <title> element:defines a title in the browser toolbar, provides a title for the page when it is added to favorites, displays a title for the page in search engine-results",
+                  "So, try to make the title as accurate and meaningful as possible!"
+                ],
+                "code": "Check the title inside meta tag..."
+              },
+              {
+                "title": "The HTML <style> Element",
+                "description": [
+                  "The <style> element is used to define style information for a single HTML page:"
+                ],
+                "code": "Check the style inside meta tag..."
+              },
+              {
+                "title": "The HTML <link> Element",
+                "description": [
+                  "The <link> element defines the relationship between the current document and an external resource.",
+                  "The <link> tag is most often used to link to external style sheets:"
+                ],
+                "code": "Check the link inside meta tag..."
+              },
+              {
+                "title": "The HTML <meta> Element",
+                "description": [
+                  "The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.",
+                  "The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.",
+                  "Example of <meta> tags:"
+                ],
+                "code": "Meta tags are present inside Head"
+              },
+              {
+                "title": "Setting The Viewport",
+                "description": [
+                  "The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.",
+                  "You should include the  <meta> element in all your web pages:"
+                ],
+                "code": "Set the viewport inside meta tag"
+              }
+            ]
+          },
+          {
+            "name": "Layout",
+            "title": "HTML Layout",
+            "description": [
+              "Websites often display content in multiple columns (like a magazine or a newspaper)."
+            ],
+            "subtopics": [
+              {
+                "title": "HTML Layout Elements",
+                "description": [
+                  "HTML has several semantic elements that define the different parts of a web page:",
+                  "Common elements: <header>, <footer>, <section>, <article>, <aside>, <nav>, <summary>."
+                ]
+              },
+              {
+                "title": "CSS Float Layout",
+                "description": [
+                  "It is common to do entire web layouts using the CSS float property. Float is easy to learn - you just need to remember how the float and clear properties work. Disadvantages: Floating elements are tied to the document flow, which may harm the flexibility."
+                ],
+                "code": "<h2>CSS Layout Float</h2> <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p> <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p> <header> <h2>Cities</h2> </header> <section> <nav> <ul> <li><a href=\"#\">London</a></li> <li><a href=\"#\">Paris</a></li> <li><a href=\"#\">Tokyo</a></li> </ul> </nav> <article> <h1>London</h1> <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p> <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p> </article> </section> <footer> <p>Footer</p> </footer>"
+              },
+              {
+                "title": "CSS Flexbox Layout",
+                "description": [
+                  "Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices."
+                ],
+                "code": "<h2>CSS Layout Flexbox</h2> <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p> <p>Resize the browser window to see the responsive effect.</p> <header> <h2>Cities</h2> </header> <section> <nav> <ul> <li><a href=\"#\">London</a></li> <li><a href=\"#\">Paris</a></li> <li><a href=\"#\">Tokyo</a></li> </ul> </nav> <article> <h1>London</h1> <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p> <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p> </article> </section> <footer> <p>Footer</p> </footer>"
+              },
+              {
+                "title": "CSS Grid Layout",
+                "description": [
+                  "The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Responsive",
+            "title": "HTML Responsive",
+            "description": [
+              "Responsive web design is about creating web pages that look good on all devices!",
+              "A responsive web design will automatically adjust for different screen sizes and viewports."
+            ],
+            "subtopics": [
+              {
+                "title": "Responsive Images",
+                "description": [
+                  "Responsive images are images that scale nicely to fit any browser size."
+                ]
+              },
+              {
+                "title": "Using the max-width Property",
+                "description": [
+                  "If the CSS width property is set to 100%, the image will be responsive and scale up and down:"
+                ],
+                "code": "<img src=\"https://www.w3schools.com/html/img_girl.jpg\" style=\"width:100%;\">"
+              },
+              {
+                "title": "Show Different Images Depending on Browser Width",
+                "description": [
+                  "The HTML <picture> element allows you to define different images for different browser window sizes.",
+                  "Resize the browser window to see how the image below changes depending on the width:"
+                ],
+                "code": "<picture> <source srcset=\"https://www.w3schools.com/html/img_flowers.jpg\" media=\"(max-width: 600px)\"> <source srcset=\"https://www.w3schools.com/html/img_flowers.jpg\" media=\"(max-width: 1500px)\"> <source srcset=\"flowers.jpg\"> <img src=\"img_smallflower.jpg\" alt=\"Flowers\"> </picture>"
+              },
+              {
+                "title": "Media Queries",
+                "description": [
+                  "In addition to resize text and images, it is also common to use media queries in responsive web pages.",
+                  "With media queries you can define completely different styles for different browser sizes."
+                ],
+                "code": "<h2>Media Queries</h2> <p>Resize the browser window.</p> <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p> <div class=\"left\"> <p>Left Menu</p> </div> <div class=\"main\"> <p>Main Content</p> </div> <div class=\"right\"> <p>Right Content</p> </div>"
+              }
+            ]
+          },
+          {
+            "name": "Semantics",
+            "title": "HTML Semantics",
+            "description": [
+              "A semantic element clearly describes its meaning to both the browser and the developer.",
+              "Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.",
+              "Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content."
+            ],
+            "subtopics": [
+              {
+                "title": "HTML <section> Element",
+                "description": [
+                  "The <section> element defines a section in a document.",
+                  "According to CodingHub's HTML documentation: \"A section is a thematic grouping of content, typically with a heading.\""
+                ],
+                "code": "<section> <h1>WWF</h1> <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p> </section> <section> <h1>WWF's Panda symbol</h1> <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p> </section>"
+              },
+              {
+                "title": "HTML <article> Element",
+                "description": [
+                  "The <article> element specifies independent, self-contained content.",
+                  "An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.",
+                  "Examples of where the <article> element can be used:Forum posts, Blog posts, User comments, Product cards, Newspaper articles"
+                ],
+                "code": "<article> <h2>Google Chrome</h2> <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p> </article> <article> <h2>Mozilla Firefox</h2> <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p> </article> <article> <h2>Microsoft Edge</h2> <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p> </article>"
+              },
+              {
+                "title": "HTML <header> Element",
+                "description": [
+                  "The <header> element represents a container for introductory content or a set of navigational links.",
+                  "A <header> element typically contains:one or more heading elements (<h1> - <h6>), logo or icon, authorship information",
+                  "Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element."
+                ],
+                "code": "<article> <header> <h1>What Does WWF Do?</h1> <p>WWF's mission:</p> </header> <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p> </article>"
+              },
+              {
+                "title": "HTML <footer> Element",
+                "description": [
+                  "The <footer> element defines a footer for a document or section.",
+                  "A <footer> element typically contains:authorship information, copyright information, contact information, sitemap, back to top links, related documents",
+                  "You can have several <footer> elements in one document."
+                ],
+                "code": "<footer> <p>Author: Hege Refsnes</p> <p><a href=\"mailto:hege@example.com\">hege@example.com</a></p> </footer>"
+              },
+              {
+                "title": "HTML <nav> Element",
+                "description": [
+                  "The <nav> element defines a set of navigation links."
+                ],
+                "code": "<nav> <a href=\"/html/\">HTML</a> | <a href=\"/css/\">CSS</a> | <a href=\"/js/\">JavaScript</a> | <a href=\"/jquery/\">jQuery</a> </nav>"
+              },
+              {
+                "title": "HTML <aside> Element",
+                "description": [
+                  "The <aside> element defines some content aside from the content it is placed in (like a sidebar).",
+                  "The <aside> content should be indirectly related to the surrounding content."
+                ],
+                "code": "<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p> <aside> <h4>Epcot Center</h4> <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p> </aside>"
+              },
+              {
+                "title": "HTML <figure> and <figcaption> Elements",
+                "description": [
+                  "The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.",
+                  "The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.",
+                  "The <img> element defines the actual image/illustration. "
+                ],
+                "code": "<figure> <img src=\"https://www.w3schools.com/html/pic_trulli.jpg\" alt=\"Trulli\"> <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption> </figure>"
+              },
+              {
+                "title": "Semantic Elements in HTML",
+                "description": [
+                  "Below is a list of some of the semantic elements in HTML."
+                ],
+                "table": {
+                  "headers": ["Tag", "Description"],
+                  "rows": [
+                    [
+                      "<article>",
+                      "Defines independent, self-contained content"
+                    ],
+                    ["<aside>", "Defines content aside from the page content"],
+                    [
+                      "<details>",
+                      "Defines additional details that the user can view or hide"
+                    ],
+                    [
+                      "<figcaption>",
+                      "Defines a caption for a <figure> element"
+                    ],
+                    [
+                      "<figure>",
+                      "Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc."
+                    ],
+                    ["<footer>", "Defines a footer for a document or section"],
+                    [
+                      "<header>",
+                      "Specifies a header for a document or section"
+                    ],
+                    ["<main>", "Specifies the main content of a document"],
+                    ["<mark>", "Defines marked/highlighted text"],
+                    ["<nav>", "Defines navigation links"],
+                    ["<section>", "Defines a section in a document"],
+                    [
+                      "<summary>",
+                      "Defines a visible heading for a <details> element"
+                    ],
+                    ["<time>", "Defines a date/time"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "StyleGuide",
+            "title": "HTML Style Guide",
+            "description": [
+              "Consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.",
+              "Here are some guidelines and tips for creating good HTML code."
+            ],
+            "subtopics": [
+              {
+                "title": "Always Declare Document Type",
+                "description": [
+                  "Always declare the document type as the first line in your document.",
+                  "The correct document type for HTML is:",
+                  "'<!DOCTYPE html>'"
+                ]
+              },
+              {
+                "title": "Use Lowercase Element Names",
+                "description": [
+                  "Although HTML is not case-sensitive, lowercase is preferred for consistency.",
+                  "following is a good and bad way to do it respectively"
+                ],
+                "code": "<p>This is a paragraph.</p><P>This is a paragraph.</P>"
+              },
+              {
+                "title": "Close All HTML Elements",
+                "description": [
+                  "In HTML, you do not have to close all elements (for example the <p> element).",
+                  "However, we strongly recommend closing all HTML elements",
+                  "following is a good and bad way to do it respectively"
+                ],
+                "code": "<p>This is a paragraph.</p><p>This is a paragraph."
+              },
+              {
+                "title": "Use Lowercase Attribute Names",
+                "description": [
+                  "It's recommended to use lowercase for attribute names like href, src, etc."
+                ]
+              },
+              {
+                "title": "Always Quote Attribute Values",
+                "description": [
+                  "HTML allows attribute values without quotes.",
+                  "However, we recommend quoting attribute values, because:",
+                  "Developers normally quote attribute values",
+                  "Quoted values are easier to read",
+                  "You MUST use quotes if the value contains spaces",
+                  "Good: <table class=\"striped\">",
+                  "Bad: <table class=striped>"
+                ]
+              },
+              {
+                "title": "Always Specify alt, width, and height for Images",
+                "description": [
+                  "Always specify the alt attribute for images. This attribute is important if the image for some reason cannot be displayed.",
+                  "Also, always define the width and height of images. This reduces flickering, because the browser can reserve space for the image before loading."
+                ],
+                "code": "<img src=\"logo.png\" alt=\"Site Logo\" width=\"100\" height=\"100\" />"
+              },
+              {
+                "title": "Spaces and Equal Signs",
+                "description": [
+                  "HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.",
+                  "Good: <link rel=\"stylesheet\" href=\"styles.css\">",
+                  "Bad: <link rel = \"stylesheet\" href = \"styles.css\">"
+                ]
+              },
+              {
+                "title": "Avoid Long Code Lines",
+                "description": [
+                  "When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.",
+                  "Try to avoid too long code lines."
+                ]
+              },
+              {
+                "title": "Blank Lines and Indentation",
+                "description": [
+                  "Do not add blank lines, spaces, or indentations without a reason.",
+                  "For readability, add blank lines to separate large or logical code blocks.",
+                  "For readability, add two spaces of indentation. Do not use the tab key."
+                ]
+              },
+              {
+                "title": "Never Skip the <title> Element",
+                "description": [
+                  "The <title> element is required in HTML.",
+                  "The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.",
+                  "So, try to make the title as accurate and meaningful as possible:",
+                  "<title>HTML Style Guide and Coding Conventions</title>"
+                ]
+              },
+              {
+                "title": "Omitting <html> and <body>?",
+                "description": [
+                  "Modern browsers allow omission, but it's not recommended."
+                ]
+              },
+              {
+                "title": "Omitting <head>?",
+                "description": [
+                  "Avoid omitting <head> for clarity and organization."
+                ]
+              },
+              {
+                "title": "Close Empty HTML Elements?",
+                "description": [
+                  "In HTML, it is optional to close empty elements.",
+                  "Allowed: <meta charset=\"utf-8\">",
+                  "Also Allowed: <meta charset=\"utf-8\" />"
+                ]
+              },
+              {
+                "title": "Add the lang Attribute",
+                "description": [
+                  "You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.",
+                  "<html lang=\"en-us\">"
+                ],
+                "code": "<h1>This is a heading</h1><p>This is a paragraph.</p>"
+              },
+              {
+                "title": "Meta Data",
+                "description": [
+                  "To ensure proper interpretation and correct search engine indexing, both the language and the character encoding <meta charset=\"charset\"> should be defined as early as possible in an HTML document:"
+                ]
+              },
+              {
+                "title": "Setting The Viewport",
+                "description": [
+                  "The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.",
+                  "You should include the following <meta> element in all your web pages:",
+                  "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+                ]
+              },
+              {
+                "title": "Use Lower Case File Names",
+                "description": [
+                  "Some web servers (Apache, Unix) are case sensitive about file names: \"london.jpg\" cannot be accessed as \"London.jpg\".",
+                  "Other web servers (Microsoft, IIS) are not case sensitive: \"london.jpg\" can be accessed as \"London.jpg\".",
+                  "If you use a mix of uppercase and lowercase, you have to be aware of this.",
+                  "If you move from a case-insensitive to a case-sensitive server, even small errors will break your web!",
+                  "To avoid these problems, always use lowercase file names!"
+                ]
+              },
+              {
+                "title": "File Extensions",
+                "description": [
+                  "HTML files should have a .html extension (.htm is allowed)."
+                ]
+              },
+              {
+                "title": "Differences Between .htm and .html?",
+                "description": [
+                  "There is no difference between the .htm and .html file extensions!",
+                  "Both will be treated as HTML by any web browser and web server."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Entities",
+            "title": "HTML Entities",
+            "description": [
+              "Reserved characters in HTML must be replaced with entities:< (less than) = &lt;, > (greater than) = &gt;"
+            ],
+            "subtopics": [
+              {
+                "title": "HTML Character Entities",
+                "description": [
+                  "Some characters are reserved in HTML.",
+                  "If you use the less than (<) or greater than (>) signs in your HTML text, the browser might mix them with tags.",
+                  "Entity names or entity numbers can be used to display reserved HTML characters."
+                ]
+              },
+              {
+                "title": "Non-breaking Space",
+                "description": [
+                  "A commonly used HTML entity is the non-breaking space: &nbsp;",
+                  "A non-breaking space is a space that will not break into a new line.",
+                  "Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive."
+                ]
+              },
+              {
+                "title": "HTML Symbol Entities",
+                "description": [
+                  "Display symbols like ©, ™, and ® using entities."
+                ],
+                "code": "&copy; 2025 Coding Hub"
+              },
+              {
+                "title": "Some Useful HTML Character Entities",
+                "description": [""],
+                "table": {
+                  "headers": ["Result", "Description", "Name", "Number"],
+                  "rows": [
+                    ["", "non-breaking space", "&nbsp;", "&#160;"],
+                    ["<", "less than", "&lt;", "&#60;"],
+                    [">", "greater than", "&gt;", "&#62;"],
+                    ["&", "ampersand", "&amp;", "&#38;"],
+                    ["\"", "double quotation mark", "&quot;", "&#34;"],
+                    ["'", "single quotation mark", "&apos;", "&#39;"],
+                    ["¢", "cent", "&cent;", "&#162;"],
+                    ["£", "pound", "&pound;", "&#163;"],
+                    ["¥", "yen", "&yen;", "&#165;"],
+                    ["€", "euro", "&euro;", "&#8364;"],
+                    ["©", "copyright", "&copy;", "&#169;"],
+                    ["®", "registered trademark", "&reg;", "&#174;"],
+                    ["™", "trademark", "&trade;", "&#8482;"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Emojis",
+            "title": "HTML Emojis",
+            "description": [
+              "Emojis are characters from the UTF-8 character set: 😄 😍 💗"
+            ],
+            "subtopics": [
+              {
+                "title": "Emoji Characters",
+                "description": [
+                  "Emojis are also characters from the UTF-8 alphabet:",
+                  "😄 is 128516",
+                  "😍 is 128525",
+                  "💗 is 128151"
+                ],
+                "code": "<h1>My First Emoji</h1> <p>&#128512;</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forms",
+        "concepts": [
+          {
+            "name": "Forms",
+            "title": "HTML Forms",
+            "description": [
+              "HTML forms are used to collect user input from the browser.",
+              "The <form> element wraps input fields such as text fields, checkboxes, radio buttons, and submit buttons.",
+              "Form data is typically sent to a server for processing."
+            ],
+            "code": "<form>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+            "subtopics": [
+              {
+                "title": "The <form> Element",
+                "description": [
+                  "The <form> element defines an HTML form for user input.",
+                  "It is a container for different input elements."
+                ],
+                "code": "<form action=\"/submit\">\n  <!-- form inputs -->\n</form>"
+              },
+              {
+                "title": "The <input> Element",
+                "description": [
+                  "The <input> element is the most used form element.",
+                  "It is used to create input fields of various types."
+                ],
+                "code": "<input type=\"text\">"
+              },
+              {
+                "title": "Text Fields",
+                "description": [
+                  "Text fields allow users to input short text data.",
+                  "They are created using type=\"text\"."
+                ],
+                "code": "<input type=\"text\" placeholder=\"Enter name\">"
+              },
+              {
+                "title": "The <label> Element",
+                "description": [
+                  "The <label> element defines a label for form elements.",
+                  "It improves accessibility and links input using the for attribute."
+                ],
+                "code": "<label for=\"name\">Name:</label>\n<input id=\"name\">"
+              },
+              {
+                "title": "Radio Buttons",
+                "description": [
+                  "Radio buttons let users select one option from a set.",
+                  "They share the same name attribute to group them."
+                ],
+                "code": "<input type=\"radio\" name=\"gender\" value=\"male\"> Male"
+              },
+              {
+                "title": "Checkboxes",
+                "description": [
+                  "Checkboxes let users select one or more options.",
+                  "Each checkbox works independently unless grouped logically."
+                ],
+                "code": "<input type=\"checkbox\" name=\"vehicle\" value=\"Bike\"> I have a bike"
+              },
+              {
+                "title": "The Submit Button",
+                "description": [
+                  "The submit button sends the form data to a server.",
+                  "It is triggered using <input type=\"submit\"> or <button type=\"submit\">."
+                ],
+                "code": "<input type=\"submit\" value=\"Submit\">"
+              },
+              {
+                "title": "The Name Attribute for <input>",
+                "description": [
+                  "The name attribute is essential as it identifies the input when submitted.",
+                  "It acts as a key in the key-value pair of submitted data."
+                ],
+                "code": "<input name=\"username\">"
+              }
+            ]
+          },
+          {
+            "name": "FormAttributes",
+            "title": "HTML Form Attributes",
+            "description": [
+              "HTML forms support attributes like action, method, target, and enctype.",
+              "These attributes define how and where the form data should be submitted."
+            ],
+            "code": "<form action=\"/submit\" method=\"post\" target=\"_blank\">\n  <input type=\"text\" name=\"username\">\n  <input type=\"submit\">\n</form>",
+            "subtopics": [
+              {
+                "title": "The Action Attribute",
+                "description": [
+                  "The action attribute defines the server endpoint where form data is sent."
+                ],
+                "code": "<form action=\"/submit\">"
+              },
+              {
+                "title": "The Target Attribute",
+                "description": [
+                  "The target attribute specifies where to display the response.",
+                  "_self, _blank, _parent, _top are common values."
+                ],
+                "code": "<form target=\"_blank\">"
+              },
+              {
+                "title": "The Method Attribute",
+                "description": [
+                  "Defines the HTTP method for submission - usually 'get' or 'post'."
+                ],
+                "code": "<form method=\"post\">"
+              },
+              {
+                "title": "The Autocomplete Attribute",
+                "description": [
+                  "Specifies whether a form should have autocomplete on or off."
+                ],
+                "code": "<form autocomplete=\"off\">"
+              },
+              {
+                "title": "The Novalidate Attribute",
+                "description": [
+                  "Prevents form validation before submission by the browser."
+                ],
+                "code": "<form novalidate>"
+              }
+            ]
+          },
+          {
+            "name": "FormElements",
+            "title": "HTML Form Elements",
+            "description": [
+              "HTML forms contain elements like <input>, <textarea>, <select>, <label>, and <button>.",
+              "These elements collect different types of input from the user."
+            ],
+            "code": "<form>\n  <label for=\"message\">Message:</label>\n  <textarea id=\"message\" name=\"message\"></textarea>\n  <button type=\"submit\">Send</button>\n</form>",
+            "subtopics": [
+              {
+                "title": "The <input> Element",
+                "description": [
+                  "Used to create various input fields like text, radio, and checkboxes."
+                ]
+              },
+              {
+                "title": "The <label> Element",
+                "description": [
+                  "Used to define labels for input fields to improve usability and accessibility."
+                ]
+              },
+              {
+                "title": "The <select> Element",
+                "description": ["Defines a drop-down list."]
+              },
+              {
+                "title": "The <textarea> Element",
+                "description": ["Defines a multi-line text input control."]
+              },
+              {
+                "title": "The <button> Element",
+                "description": ["Used to create clickable buttons in forms."]
+              },
+              {
+                "title": "The <fieldset> and <legend> Elements",
+                "description": [
+                  "Used to group related form elements with a caption."
+                ]
+              },
+              {
+                "title": "The <datalist> Element",
+                "description": [
+                  "Used to provide autocomplete options for <input> elements."
+                ]
+              },
+              {
+                "title": "The <output> Element",
+                "description": [
+                  "Used to display the result of a calculation or user action."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "InputTypes",
+            "title": "HTML Input Types",
+            "description": [
+              "The <input> tag supports many types for different input scenarios.",
+              "They range from simple text to color pickers and date selectors."
+            ],
+            "code": "<form>\n  <input type=\"email\" placeholder=\"Enter email\">\n  <input type=\"date\">\n  <input type=\"submit\">\n</form>",
+            "subtopics": [
+              {
+                "title": "Input Type Text",
+                "description": ["A single-line text field."]
+              },
+              {
+                "title": "Input Type Password",
+                "description": ["Hides characters for password entry."]
+              },
+              {
+                "title": "Input Type Submit",
+                "description": ["A button to submit the form."]
+              },
+              {
+                "title": "Input Type Reset",
+                "description": ["Resets the form to its initial values."]
+              },
+              {
+                "title": "Input Type Radio",
+                "description": ["For selecting one option among many."]
+              },
+              {
+                "title": "Input Type Checkbox",
+                "description": ["For selecting multiple independent options."]
+              },
+              {
+                "title": "Input Type Button",
+                "description": ["Defines a simple button."]
+              },
+              {
+                "title": "Input Type Color",
+                "description": ["Color picker input field."]
+              },
+              {
+                "title": "Input Type Date",
+                "description": ["Date selection widget."]
+              },
+              {
+                "title": "Input Type Datetime-local",
+                "description": ["Date and time (local)."]
+              },
+              {
+                "title": "Input Type Email",
+                "description": ["Validates email format input."]
+              },
+              {
+                "title": "Input Type Image",
+                "description": ["Submit button with image."]
+              },
+              {
+                "title": "Input Type File",
+                "description": ["Uploads file from the device."]
+              },
+              {
+                "title": "Input Type Hidden",
+                "description": ["Invisible input, used to store data."]
+              },
+              {
+                "title": "Input Type Month",
+                "description": ["Month and year picker."]
+              },
+              {
+                "title": "Input Type Number",
+                "description": ["Accepts numeric input."]
+              },
+              {
+                "title": "Input Type Range",
+                "description": ["Slider for range values."]
+              },
+              {
+                "title": "Input Type Search",
+                "description": ["Search input field."]
+              },
+              {
+                "title": "Input Type Tel",
+                "description": ["Telephone number input field."]
+              },
+              {
+                "title": "Input Type Time",
+                "description": ["Time picker input."]
+              },
+              {
+                "title": "Input Type Url",
+                "description": ["URL input validator."]
+              },
+              {
+                "title": "Input Type Week",
+                "description": ["Week number picker."]
+              }
+            ]
+          },
+          {
+            "name": "InputAttributes",
+            "title": "HTML Input Attributes",
+            "description": [
+              "HTML input fields support various attributes that control behavior, appearance, and constraints.",
+              "These attributes enhance form usability and validation."
+            ],
+            "code": "<form>\n  <input type=\"text\" placeholder=\"Enter name\" required>\n  <input type=\"submit\">\n</form>",
+            "subtopics": [
+              {
+                "title": "The value Attribute",
+                "description": ["Sets the default value of an input field."]
+              },
+              {
+                "title": "The readonly Attribute",
+                "description": ["Prevents user editing but allows selection."]
+              },
+              {
+                "title": "The disabled Attribute",
+                "description": ["Disables the input field."]
+              },
+              {
+                "title": "The size Attribute",
+                "description": ["Specifies the visible width."]
+              },
+              {
+                "title": "The maxlength Attribute",
+                "description": [
+                  "Limits input to a certain number of characters."
+                ]
+              },
+              {
+                "title": "The min and max Attributes",
+                "description": ["Set minimum and maximum values."]
+              },
+              {
+                "title": "The multiple Attribute",
+                "description": ["Allows selecting multiple files."]
+              },
+              {
+                "title": "The pattern Attribute",
+                "description": ["Defines a regular expression for validation."]
+              },
+              {
+                "title": "The placeholder Attribute",
+                "description": ["Displays placeholder text in the input."]
+              },
+              {
+                "title": "The required Attribute",
+                "description": ["Marks input as mandatory."]
+              },
+              {
+                "title": "The step Attribute",
+                "description": ["Specifies valid interval values."]
+              },
+              {
+                "title": "The autofocus Attribute",
+                "description": ["Focuses the input when page loads."]
+              },
+              {
+                "title": "The height and width Attributes",
+                "description": ["Define dimensions for image inputs."]
+              },
+              {
+                "title": "The list Attribute",
+                "description": ["Binds the input to a datalist."]
+              },
+              {
+                "title": "The autocomplete Attribute",
+                "description": ["Controls browser autofill behavior."]
+              }
+            ]
+          },
+          {
+            "name": "InputFormAttributes",
+            "title": "HTML Input Form Attributes",
+            "description": [
+              "HTML5 input fields allow specific form-related attributes.",
+              "These attributes connect inputs to forms or modify how data is submitted."
+            ],
+            "code": "<form id=\"myForm\">\n  <input type=\"submit\" value=\"Submit\">\n</form>\n\n<input type=\"text\" form=\"myForm\" placeholder=\"Linked externally\">",
+            "subtopics": [
+              {
+                "title": "The form Attribute",
+                "description": ["Links an input to a specific form ID."]
+              },
+              {
+                "title": "The formaction Attribute",
+                "description": [
+                  "Overrides form action when submitting this input."
+                ]
+              },
+              {
+                "title": "The formenctype Attribute",
+                "description": [
+                  "Specifies the encoding type for the form data."
+                ]
+              },
+              {
+                "title": "The formmethod Attribute",
+                "description": [
+                  "Overrides form method when submitting this input."
+                ]
+              },
+              {
+                "title": "The formtarget Attribute",
+                "description": [
+                  "Specifies where to display response after submission."
+                ]
+              },
+              {
+                "title": "The formnovalidate Attribute",
+                "description": ["Prevents validation when this input is used."]
+              },
+              {
+                "title": "The novalidate Attribute",
+                "description": ["Prevents validation of the entire form."]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Graphics",
+        "concepts": [
+          {
+            "name": "Canvas",
+            "title": "HTML Canvas",
+            "description": [
+              "The HTML <canvas> element is used to draw graphics on a web page using JavaScript.",
+              "It is commonly used for drawing shapes, charts, and game graphics."
+            ],
+            "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>",
+            "subtopics": [
+              {
+                "title": "What is HTML Canvas?",
+                "description": [
+                  "The <canvas> element provides a surface for rendering graphics dynamically via JavaScript.",
+                  "It supports drawing shapes, lines, images, and animations."
+                ]
+              },
+              {
+                "title": "Add a JavaScript",
+                "description": [
+                  "To draw on a canvas, use JavaScript to access the drawing context and render shapes.",
+                  "Example: Draw a circle using canvas API."
+                ],
+                "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"200\"></canvas>\n<script>\n  const canvas = document.getElementById(\"myCanvas\");\n  const ctx = canvas.getContext(\"2d\");\n  ctx.beginPath();\n  ctx.arc(100, 100, 40, 0, 2 * Math.PI);\n  ctx.stroke();\n</script>"
+              }
+            ]
+          },
+          {
+            "name": "SVG",
+            "title": "HTML SVG",
+            "description": [
+              "SVG stands for Scalable Vector Graphics and is used to define vector-based graphics in XML format.",
+              "SVG images can be scaled without losing quality and are great for logos, charts, and illustrations."
+            ],
+            "code": "<svg width=\"100\" height=\"100\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\n</svg>",
+            "subtopics": [
+              {
+                "title": "What is SVG?",
+                "description": [
+                  "SVG is an XML-based language for defining vector graphics.",
+                  "It supports shapes, paths, text, gradients, and interactivity."
+                ]
+              },
+              {
+                "title": "The <svg> Element",
+                "description": [
+                  "The <svg> element is the container for SVG graphics.",
+                  "It can include shapes like <circle>, <rect>, <path>, and more."
+                ],
+                "code": "<svg width=\"100\" height=\"100\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"blue\" />\n</svg>"
+              },
+              {
+                "title": "SVG Rectangle",
+                "description": [
+                  "The <rect> element is used to draw rectangles in SVG.",
+                  "It accepts attributes like x, y, width, height, fill, and stroke."
+                ],
+                "code": "<svg width=\"150\" height=\"100\">\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"50\" fill=\"orange\" stroke=\"black\" />\n</svg>"
+              },
+              {
+                "title": "SVG Gradient Ellipse and Text",
+                "description": [
+                  "SVG supports gradients for fills and strokes.",
+                  "You can also draw ellipses and add text inside SVG."
+                ],
+                "code": "<svg width=\"200\" height=\"150\">\n  <defs>\n    <linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n      <stop offset=\"0%\" style=\"stop-color:rgb(255,255,0);stop-opacity:1\" />\n      <stop offset=\"100%\" style=\"stop-color:rgb(255,0,0);stop-opacity:1\" />\n    </linearGradient>\n  </defs>\n  <ellipse cx=\"100\" cy=\"70\" rx=\"80\" ry=\"50\" fill=\"url(#grad1)\" />\n  <text x=\"50\" y=\"75\" fill=\"black\">SVG Text</text>\n</svg>"
+              },
+              {
+                "title": "Differences Between SVG and Canvas",
+                "description": [
+                  "SVG uses XML to draw graphics, while Canvas uses JavaScript rendering.",
+                  "SVG is resolution-independent and ideal for static images; Canvas is better for dynamic graphics and games."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Media",
+        "concepts": [
+          {
+            "name": "Media",
+            "title": "HTML Media",
+            "description": [
+              "HTML5 introduced new media elements like <audio> and <video> to embed media files directly into web pages.",
+              "These tags make it easy to add and control multimedia content without plugins."
+            ],
+            "code": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  Your browser does not support the video tag.\n</video>",
+            "subtopics": [
+              {
+                "title": "What is Multimedia?",
+                "description": [
+                  "Multimedia refers to content that uses a combination of different content forms such as text, audio, images, animations, video, and interactive content.",
+                  "HTML provides native support for multimedia through <audio> and <video> elements."
+                ]
+              },
+              {
+                "title": "Browser Support",
+                "description": [
+                  "Modern browsers support HTML5 media tags like <audio> and <video> with varying support for file formats such as MP4, WebM, OGG, and MP3."
+                ]
+              },
+              {
+                "title": "Multimedia Formats",
+                "description": [
+                  "Common multimedia formats include MP4, WebM, Ogg (for video) and MP3, WAV, OGG (for audio).",
+                  "Using multiple sources increases compatibility across browsers."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Video",
+            "title": "HTML Video",
+            "description": [
+              "The <video> element is used to embed video content on the web.",
+              "It supports multiple source formats and attributes like controls, autoplay, muted, and loop."
+            ],
+            "code": "<video controls>\n  <source src=\"example.mp4\" type=\"video/mp4\">\n</video>",
+            "subtopics": [
+              {
+                "title": "The HTML <video> Element",
+                "description": [
+                  "The <video> element allows video playback within HTML pages using source tags or fallback content."
+                ]
+              },
+              {
+                "title": "How it Works",
+                "description": [
+                  "Browsers look through provided <source> formats and play the first compatible video.",
+                  "Fallback content is displayed if none is supported."
+                ]
+              },
+              {
+                "title": "HTML <video> Autoplay",
+                "description": [
+                  "The autoplay attribute causes the video to start playing as soon as it's ready without user interaction."
+                ],
+                "code": "<video autoplay muted>\n  <source src=\"clip.mp4\" type=\"video/mp4\">\n</video>"
+              },
+              {
+                "title": "Browser Support",
+                "description": [
+                  "Most modern browsers support the <video> element, but not all video formats are supported universally."
+                ]
+              },
+              {
+                "title": "HTML Video Formats",
+                "description": [
+                  "Common formats: MP4 (H.264), WebM, and Ogg.",
+                  "MP4 is the most widely supported."
+                ]
+              },
+              {
+                "title": "HTML Video Tags",
+                "description": [
+                  "Nested <source> tags define multiple formats.",
+                  "Attributes include controls, autoplay, muted, loop, and poster."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Audio",
+            "title": "HTML Audio",
+            "description": [
+              "The <audio> element allows you to embed sound content in documents.",
+              "It supports formats like MP3, WAV, and OGG."
+            ],
+            "code": "<audio controls>\n  <source src=\"sound.mp3\" type=\"audio/mpeg\">\n</audio>",
+            "subtopics": [
+              {
+                "title": "The HTML <audio> Element",
+                "description": [
+                  "The <audio> tag is used to embed audio files on a webpage with support for controls and multiple sources."
+                ]
+              },
+              {
+                "title": "HTML Audio - How It Works",
+                "description": [
+                  "Like <video>, <audio> uses <source> tags to provide fallback formats.",
+                  "Browsers play the first compatible format."
+                ]
+              },
+              {
+                "title": "HTML <audio> Autoplay",
+                "description": [
+                  "The autoplay attribute starts playing audio automatically. Muting may be required for autoplay to work in some browsers."
+                ],
+                "code": "<audio autoplay muted>\n  <source src=\"song.mp3\" type=\"audio/mpeg\">\n</audio>"
+              },
+              {
+                "title": "Browser Support",
+                "description": [
+                  "The <audio> element is widely supported in modern browsers, but supported audio formats vary."
+                ]
+              },
+              {
+                "title": "HTML Audio Formats",
+                "description": [
+                  "Commonly supported formats: MP3 (most supported), WAV, and OGG.",
+                  "Always provide multiple sources for broader compatibility."
+                ]
+              },
+              {
+                "title": "HTML Audio Tags",
+                "description": [
+                  "Common attributes include controls, autoplay, loop, muted, and preload.",
+                  "Use multiple <source> tags to define different audio formats."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "PlugIns",
+            "title": "HTML Plug-ins",
+            "description": [
+              "Plug-ins were used in older HTML versions to embed third-party applications like Flash or PDF viewers.",
+              "Modern web standards now prefer native HTML5 elements over plug-ins."
+            ],
+            "code": "<object data=\"file.pdf\" type=\"application/pdf\" width=\"300\" height=\"200\"></object>",
+            "subtopics": [
+              {
+                "title": "The <object> Element",
+                "description": [
+                  "The <object> element is used to embed multimedia like PDF documents or Flash.",
+                  "It requires the type attribute to define the embedded content format."
+                ],
+                "code": "<object data=\"example.pdf\" type=\"application/pdf\" width=\"400\" height=\"300\"></object>"
+              },
+              {
+                "title": "The <embed> Element",
+                "description": [
+                  "The <embed> tag embeds external content like Flash, video, or audio files directly into the document.",
+                  "It is a self-closing tag and does not require fallback content."
+                ],
+                "code": "<embed src=\"demo.swf\" width=\"300\" height=\"200\">"
+              }
+            ]
+          },
+          {
+            "name": "YouTube",
+            "title": "HTML YouTube",
+            "description": [
+              "YouTube videos can be embedded into HTML pages using the <iframe> tag.",
+              "It allows integration of YouTube content while maintaining responsiveness."
+            ],
+            "code": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" allowfullscreen></iframe>"
+          }
+        ]
+      }
+    ]
+  }
+]

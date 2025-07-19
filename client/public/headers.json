@@ -1,0 +1,7 @@
+{
+  "thehtmltitleelement": "<title>A Meaningful Page Title</title>",
+  "thehtmlstyleelement": "<style> body {background-color: powderblue;} h1 {color: red;} p {color: blue;} </style>",
+  "thehtmlmetaelement": "<meta name=\"description\" content=\"Free Web tutorials\"> <meta name=\"keywords\" content=\"HTML, CSS, JavaScript\"> <meta name=\"author\" content=\"John Doe\">",
+  "settingtheviewport": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+  "mediaqueries": "<style> * { box-sizing: border-box; } .left { background-color: #2196F3; padding: 20px; float: left; width: 20%; } .main { background-color: #f1f1f1; padding: 20px; float: left; width: 60%; } .right { background-color: #04AA6D; padding: 20px; float: left; width: 20%; } @media screen and (max-width: 800px) { .left, .main, .right { width: 100%; } } </style>"
+}

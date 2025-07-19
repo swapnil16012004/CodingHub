@@ -1,0 +1,40 @@
+[
+  {
+    "language": "css",
+    "topics": [
+      {
+        "name": "Basics",
+        "concepts": [
+          {
+            "name": "Home",
+            "title": "CSS HOME",
+            "description": [
+              "CSS is the language we use to style an HTML document.",
+              "CSS describes how HTML elements should be displayed.",
+              "This tutorial will teach you CSS from basic to advanced."
+            ],
+            "code": "<style>h1 { color: blue; } p { font-size: 16px; }</style><body><h1>Hello CSS</h1><p>This is a styled paragraph.</p></body>"
+          },
+          {
+            "name": "Intro",
+            "title": "CSS Introduction",
+            "description": [
+              "CSS stands for Cascading Style Sheets.",
+              "CSS describes how HTML elements are to be displayed on screen, paper, or in other media."
+            ],
+            "code": "<style>\nh1 { color: blue; }\np { font-size: 16px; }\n</style>"
+          },
+          {
+            "name": "Selectors",
+            "title": "CSS Selectors",
+            "description": [
+              "CSS selectors are used to 'find' (or select) the HTML elements you want to style.",
+              "We can divide CSS selectors into five categories: Simple, Combinator, Pseudo-class, Pseudo-element, Attribute."
+            ],
+            "code": "<style>\ndiv { background-color: lightgray; }\n#myId { font-weight: bold; }\n.className { padding: 10px; }\n</style>"
+          }
+        ]
+      }
+    ]
+  }
+]
