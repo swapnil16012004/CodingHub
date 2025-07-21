@@ -4,6 +4,7 @@ import { MyContext } from "../../App";
 import { useParams } from "react-router-dom";
 import axiosInstance from "../../../axiosConfig";
 import ConceptSidebar from "../../components/ConceptSidebar";
+import axios from "axios";
 
 const Home = () => {
   const context = useContext(MyContext);
@@ -15,6 +16,13 @@ const Home = () => {
   });
 
   useEffect(() => {
+    axios
+      .get("https://codinghub-9t1d.onrender.com/api/")
+      .then(() => console.log("Backend pinged"))
+      .catch((err) => console.error("Backend not responding:", err));
+  }, []);
+
+  useEffect(() => {
     async function fetchData() {
       try {
         const response = await axiosInstance.get("/");
@@ -23,7 +31,9 @@ const Home = () => {
         console.error(err);
       }
     }
-    fetchData();
+    setTimeout(() => {
+      fetchData();
+    }, 2500);
   }, [context.setData]);
 
   if (!context.Data || !Array.isArray(context.Data))
